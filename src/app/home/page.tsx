@@ -77,7 +77,7 @@ function HomePage() {
                 <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
                   BEST SELLING
                   <br />
-                  E-COMMERCE WEBSITE
+                  AVONE E-COMMERCE WEBSITE
                 </h1>
                 <p className="text-lg">
                   A Creative, Flexible , Clean, Easy to use and

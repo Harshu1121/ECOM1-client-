@@ -318,7 +318,7 @@ function CheckoutContent() {
                       </p>
                     </div>
                     <p className="font-medium">
-                      ${(item?.product?.price * item.quantity).toFixed(2)}
+                    ₹{(item?.product?.price * item.quantity).toFixed(2)}
                     </p>
                   </div>
                 ))}
@@ -349,12 +349,12 @@ function CheckoutContent() {
                 <div className="space-y-2">
                   <div className="flex justify-between">
                     <span>Subtotal</span>
-                    <span>${subTotal.toFixed(2)}</span>
+                    <span>₹{subTotal.toFixed(2)}</span>
                   </div>
                   {appliedCoupon && (
                     <div className="flex justify-between text-green-500">
                       <span>Discount ({appliedCoupon.discountPercent})%</span>
-                      <span>${discountAmount.toFixed(2)}</span>
+                      <span>₹{discountAmount.toFixed(2)}</span>
                     </div>
                   )}
                 </div>
@@ -362,7 +362,7 @@ function CheckoutContent() {
 
                 <div className="flex justify-between font-medium">
                   <span>Total</span>
-                  <span>${total.toFixed(2)}</span>
+                  <span>₹{total.toFixed(2)}</span>
                 </div>
               </div>
             </Card>

@@ -96,7 +96,7 @@ function ProductDetailsContent({ id }: { id: string }) {
               <h1 className="text-3xl font-bold mb-2">{product.name}</h1>
               <div>
                 <span className="text-2xl font-semibold">
-                  ${product.price.toFixed(2)}
+                  ₹{product.price.toFixed(2)}
                 </span>
               </div>
             </div>

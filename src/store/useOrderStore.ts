@@ -51,13 +51,14 @@ export interface AdminOrder {
 interface CreateOrderData {
   userId: string;
   addressId: string;
-  items: Omit<OrderItem, "id">[];
+  items: Omit<OrderItem, "id">[]; // Make sure this omits "id"
   couponId?: string;
   total: number;
   paymentMethod: "CREDIT_CARD";
   paymentStatus: "PENDING" | "COMPLETED";
   paymentId?: string;
 }
+
 
 interface OrderStore {
   currentOrder: Order | null;

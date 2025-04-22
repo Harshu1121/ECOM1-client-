@@ -82,7 +82,7 @@ function UserCartPage() {
                     </div>
                   </td>
                   <td className="py-4 px-4 text-right">
-                    ${item.price.toFixed(2)}
+                  ₹{item.price.toFixed(2)}
                   </td>
                   <td className="py-4 px-4">
                     <div className="flex items-center justify-center gap-2">
@@ -120,7 +120,7 @@ function UserCartPage() {
                     </div>
                   </td>
                   <td className="py-2 px-4 text-right">
-                    ${(item.price * item.quantity).toFixed(2)}
+                  ₹{(item.price * item.quantity).toFixed(2)}
                   </td>
                 </tr>
               ))}
